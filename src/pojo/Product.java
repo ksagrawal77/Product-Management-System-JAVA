@@ -6,17 +6,17 @@ public class Product {
 	String productName;
 	String productCategory;
 	Integer productPrice;
-	
+	Integer productDiscount;
 	public Product() {
-		// TODO Auto-generated constructor stub
 	}
 
-	public Product(String productId, String productName, String productCategory, Integer productPrice) {
+	public Product(String productId, String productName, String productCategory, Integer productPrice, Integer productDiscount) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.productCategory = productCategory;
 		this.productPrice = productPrice;
+		this.productDiscount = productDiscount;
 	}
 
 	public String getProductId() {
@@ -43,6 +43,14 @@ public class Product {
 		this.productCategory = productCategory;
 	}
 
+	public Integer getProductDiscount() {
+		return productDiscount;
+	}
+
+	public void setProductDiscount(Integer productDiscount) {
+		this.productDiscount = productDiscount;
+	}
+
 	public Integer getProductPrice() {
 		return productPrice;
 	}
@@ -54,7 +62,7 @@ public class Product {
 	@Override
 	public String toString() {
 		return "Product [productId=" + productId + ", productName=" + productName + ", productCategory="
-				+ productCategory + ", productPrice=" + productPrice + "]";
+				+ productCategory + ", productPrice=" + productPrice + "& productDiscount=" + productDiscount + "]";
 	}
 
 }
