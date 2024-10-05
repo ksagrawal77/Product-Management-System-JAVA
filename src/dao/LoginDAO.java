@@ -21,7 +21,6 @@ public class LoginDAO {
 			{
 				validStatus = true;
 			}
-			
 			DBUtil.closeConnection(conn);
 			
 		}
